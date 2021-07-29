@@ -58,7 +58,8 @@
     </dependency>
     <dependency>
       <groupId>io.fabric8</groupId>
-      <artifactId>kubernetes-api</artifactId>
+      <artifactId>spring-cloud-kubernetes-core</artifactId>
+      <version>0.1.6.fuse-750024-redhat-00001</version>
     </dependency>
   </dependencies>
 
