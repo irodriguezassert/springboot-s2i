@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.redhat.gpe.training</groupId>
-  <artifactId>fis7-camel-springboot</artifactId>
+  <artifactId>s2i-fuse70-spring-boot-camel-xml</artifactId>
   <version>1.0</version>
 
   <name>Fabric8 :: Quickstarts :: Spring-Boot :: Camel XML</name>

@@ -13,7 +13,7 @@
       <transform id="route-transform">
         <method ref="myTransformer"/>
       </transform>
-      <log id="route-log" message=">>> Version 2.1 local commit: ${body}"/>
+      <log id="route-log" message=">>> Version 3 Maven Fabric8 Deploy: ${body}"/>
     </route>
   </camelContext>
 

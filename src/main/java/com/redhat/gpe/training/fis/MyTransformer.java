@@ -16,6 +16,7 @@
  */
 package com.redhat.gpe.training.fis;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
@@ -24,15 +25,21 @@ import org.springframework.stereotype.Component;
 @Component(value = "myTransformer")
 public class MyTransformer {
 
-    public String transform() {
-        // let's return a random string
+	//inject via application.properties
+	@Value("${app.hello.message}")
+	private String message = "Hello World";
+	
+	public String transform() {
+
         StringBuffer buffer = new StringBuffer();
+        buffer.append(message);
+        buffer.append(" : ");
+        // lets return a random string
         for (int i = 0; i < 3; i++) {
             int number = (int) (Math.round(Math.random() * 1000) % 10);
             char letter = (char) ('0' + number);
             buffer.append(letter);
         }
         return buffer.toString();
-    }
-
+	}
 }
